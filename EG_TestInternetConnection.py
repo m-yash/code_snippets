@@ -5,6 +5,10 @@ def check_internet():
     try:
         urlopen('https://www.google.com', timeout=5)
         return True
+        
+        #Your code.. 
+        #Example as sending email if there's an internet connection
+        
     except urllib.error.URLError as e:
         print(e)
         return False
