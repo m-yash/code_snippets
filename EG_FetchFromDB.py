@@ -8,6 +8,7 @@ con = pymysql.connect("","","","")
 cur = con.cursor()
 
 #execute command
+#considering id = 1 for example
 exe = cur.execute("select firstname, lastname from student where id = 1")
 
 data = cur.fetchall()
